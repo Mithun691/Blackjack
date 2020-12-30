@@ -32,6 +32,7 @@ class Hand():
 
         if(card.rank=="ace"):
             self.ace_count+=1
+        #Try decreasing the value to <=21 by evaluating ace as 1 instead of 11
         while(self.value>21 and self.ace_count>0):
             self.value-=10
             self.ace_count-=1
